@@ -3,7 +3,7 @@
 # R0903: too-few-public-methods
 # R0201: Method could be a function
 # fixme: ignore TODO
-disable=C0111, R0903, R0201, W0703, bad-continuation, fixme
+disable=C0111, R0903, R0201, W0703, bad-continuation, fixme, no-name-in-module, import-error
 
 [SIMILARITIES]
 

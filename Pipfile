@@ -18,6 +18,8 @@ fastapi = "==0.61.1"
 requests = "==2.24.0"
 gunicorn = "==20.0.4"
 importlib-metadata = "==1.7.0"
+sqlalchemy = "*"
+pydantic = "==1.4"
 
 [requires]
 python_version = "3.7"

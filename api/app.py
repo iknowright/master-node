@@ -4,8 +4,10 @@ from fastapi.responses import Response
 from loguru import logger
 
 from endpoints import RESOURCES
+from endpoints.wrist import model
 
 from config import Config
+from database import ENGINE
 
 APP = FastAPI(
     version=Config.VERSION,
@@ -15,6 +17,7 @@ APP = FastAPI(
     redoc_url=Config.REDOC_URL
 )
 API_ROUTER = APIRouter()
+model.BASE.metadata.create_all(bind=ENGINE)
 
 
 # Logs incoming request information

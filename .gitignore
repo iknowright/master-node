@@ -4,3 +4,4 @@
 .pytest_cache/
 .coverage
 .python-version
+*.db
